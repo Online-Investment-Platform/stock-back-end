@@ -1,7 +1,7 @@
 package com.example.investment_api.searchHome;
 
-import com.example.investment_api.searchHome.dto.StockDataDTO;
-import com.example.investment_api.searchHome.infrastructure.StockDataParser;
+import com.example.investment_api.search.base.dashboard.dto.DashboardData;
+import com.example.investment_api.search.base.dashboard.infrastructure.DashboardDataParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,23 +15,23 @@ import java.util.List;
 public class SearchHomeTest {
 
     private ObjectMapper objectMapper;
-    private StockDataParser stockDataParser;
+    private DashboardDataParser stockDataParser;
 
     @BeforeEach
     void setUp() {
         objectMapper = new ObjectMapper();
-        stockDataParser = new StockDataParser(objectMapper);
+        stockDataParser = new DashboardDataParser(objectMapper);
     }
 
     @Test
     void 주식검색_메인페이지_dto_반환값_테스트() throws IOException {
         String jsonResponse = new String(Files.readAllBytes(Paths.get("src/test/resources/marketCapitalizationResponse.json")));
 
-        List<StockDataDTO> dtoList = stockDataParser.parse(jsonResponse);
+        List<DashboardData> dtoList = stockDataParser.parse(jsonResponse);
 
         Assertions.assertEquals(2, dtoList.size());
 
-        StockDataDTO dto = dtoList.get(0);
+        DashboardData dto = dtoList.get(0);
         Assertions.assertEquals("1", dto.rank());
         Assertions.assertEquals("Stock Name 1", dto.stockName());
         Assertions.assertEquals("150000", dto.stockPrice());
