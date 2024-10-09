@@ -15,7 +15,12 @@ import java.util.List;
 public class DashboardService {
 
     private final MarketCapitalizationFetcher marketCapitalizationFetcher;
+<<<<<<< HEAD:investement/src/main/java/com/example/investment_api/search/base/dashboard/service/DashboardService.java
     private final DashboardDataParser dataParser;
+=======
+
+    private final StockDataParser stockDataParser;
+>>>>>>> main:investement/src/main/java/com/example/investment_api/searchHome/service/StockDataService.java
 
     @Autowired
     public DashboardService(final MarketCapitalizationFetcher marketCapitalizationFetcher, final DashboardDataParser dataParser) {

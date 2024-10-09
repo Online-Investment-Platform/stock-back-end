@@ -2,7 +2,12 @@ package com.example.investment_api.search.detail.consensus.service;
 
 import com.example.investment_api.common.stockData.Stock;
 import com.example.investment_api.common.stockData.StockRepository;
+<<<<<<< HEAD:investement/src/main/java/com/example/investment_api/search/detail/consensus/service/InvestmentRecommendationService.java
 import com.example.investment_api.search.detail.consensus.controller.dto.InvestmentRecommendationDTO;
+=======
+
+import com.example.investment_api.search.consensus.controller.dto.InvestmentRecommendationDTO;
+>>>>>>> main:investement/src/main/java/com/example/investment_api/search/consensus/service/InvestmentRecommendationService.java
 
 import com.example.investment_api.search.detail.consensus.domain.InvestmentRecommendationParser;
 

@@ -20,7 +20,15 @@ public class DashboardDataParser {
         this.objectMapper = objectMapper;
     }
 
+<<<<<<< HEAD:investement/src/main/java/com/example/investment_api/search/base/dashboard/infrastructure/DashboardDataParser.java
     public List<DashboardData> parse(String responseBody) throws IOException {
+=======
+    public List<StockDataDTO> parse(String responseBody) throws IOException {
+        return getStockDataDTOS(responseBody);
+    }
+
+    private List<StockDataDTO> getStockDataDTOS(final String responseBody) throws JsonProcessingException {
+>>>>>>> main:investement/src/main/java/com/example/investment_api/searchHome/infrastructure/StockDataParser.java
         JsonNode items = getJsonNode(responseBody);
         return extractStockData(items);
     }
