@@ -1,6 +1,7 @@
 package com.example.investment_api.search.consensus.domain;
 
-import com.example.investment_api.search.consensus.controller.dto.InvestmentRecommendationDTO;
+import com.example.investment_api.search.detail.consensus.controller.dto.InvestmentRecommendationDTO;
+import com.example.investment_api.search.detail.consensus.domain.InvestmentRecommendationParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

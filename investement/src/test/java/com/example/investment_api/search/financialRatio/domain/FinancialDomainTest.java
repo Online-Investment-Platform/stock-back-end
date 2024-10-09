@@ -1,7 +1,7 @@
 package com.example.investment_api.search.financialRatio.domain;
 
-import com.example.investment_api.search.financialRatio.controller.dto.FinancialRatioDTO;
-import com.example.investment_api.search.financialRatio.infrastructure.FinancialRatioParser;
+import com.example.investment_api.search.detail.financialRatio.controller.dto.FinancialRatioDTO;
+import com.example.investment_api.search.detail.financialRatio.infrastructure.FinancialRatioParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,7 +1,7 @@
 package com.example.investment_api.search.news;
 
-import com.example.investment_api.search.news.controller.dto.NewsResponse;
-import com.example.investment_api.search.news.infrastructure.NewsParser;
+import com.example.investment_api.search.detail.news.controller.dto.NewsResponse;
+import com.example.investment_api.search.detail.news.infrastructure.NewsParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
