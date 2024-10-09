@@ -11,6 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com.example.investement" target="17" />
+      <module name="com.example.investement.main" target="17" />
+      <module name="com.example.investement.test" target="17" />
       <module name="stock-back-end.investment" target="17" />
     </bytecodeTargetLevel>
   </component>
